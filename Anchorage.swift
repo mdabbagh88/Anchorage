@@ -375,7 +375,7 @@ public struct EdgeAnchors: AnchorType {
         return constraintsForAnchors(anchor, constant: c, priority: priority, builder: constraintBuilder)
     }
 
-    private subscript (edge: LayoutEdge) -> NSLayoutAnchor {
+    public subscript (edge: LayoutEdge) -> NSLayoutAnchor {
         switch edge {
         case .Top:      return top
         case .Leading:  return leading
@@ -435,7 +435,7 @@ public struct EdgeConstraints {
         return [top, leading, bottom, trailing].flatMap { $0 }
     }
 
-    private subscript (edge: LayoutEdge) -> NSLayoutConstraint? {
+    public subscript (edge: LayoutEdge) -> NSLayoutConstraint? {
         get {
             switch edge {
             case .Top:      return top
