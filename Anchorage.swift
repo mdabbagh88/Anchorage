@@ -329,7 +329,7 @@ public struct EdgeAnchors: AnchorType {
 
     private var includedEdges = LayoutEdge.All
 
-    private init(top: NSLayoutYAxisAnchor, leading: NSLayoutXAxisAnchor, bottom: NSLayoutYAxisAnchor, trailing: NSLayoutXAxisAnchor) {
+    public init(top: NSLayoutYAxisAnchor, leading: NSLayoutXAxisAnchor, bottom: NSLayoutYAxisAnchor, trailing: NSLayoutXAxisAnchor) {
         self.top = top
         self.leading = leading
         self.bottom = bottom
