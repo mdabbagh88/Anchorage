@@ -290,7 +290,7 @@ extension UILayoutGuide: EdgeAnchorsProvider {
 
 // MARK: - LayoutEdge
 
-private enum LayoutEdge {
+public enum LayoutEdge {
 
     case Top, Leading, Bottom, Trailing
 
