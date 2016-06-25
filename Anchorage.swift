@@ -294,9 +294,9 @@ public enum LayoutEdge {
 
     case Top, Leading, Bottom, Trailing
 
-    static let Horizontal = [Leading, Trailing]
-    static let Vertical = [Top, Bottom]
-    static let All = [Top, Leading, Bottom, Trailing]
+    public static let Horizontal = [Leading, Trailing]
+    public static let Vertical = [Top, Bottom]
+    public static let All = [Top, Leading, Bottom, Trailing]
 
     var axis: UILayoutConstraintAxis {
         switch self {
